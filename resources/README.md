@@ -3,10 +3,10 @@
 In this directory you will find several resources to help you replicate the analyses.
 Some of which are created automatically along the pipeline, others are input files and others are log files to help keeping track of the different steps and outputs.
 
-**EukProt_v9.tre**:
+**[EukProt_v9.tre](https://github.com/MiguelMSandin/EukEcoEvo/blob/main/resources/EukProt_v9.tre)**:
 The original constraint tree used in this study, taken form the [EukProt](https://github.com/beaplab/EukProt) (and here the citation: [Richter *et al*., 2022](https://peercommunityjournal.org/articles/10.24072/pcjournal.173/)) database and modified to accommodate the different taxonomic framework used in [PR2]()https://pr2-database.org/ and the [PacBio](https://figshare.com/articles/dataset/Global_patterns_and_rates_of_habotat_transitions_across_the_eukaryotic_tree_of_life/15164772) sequences.
 
-**info_trees.tsv**:
+**[info_trees.tsv](https://github.com/MiguelMSandin/EukEcoEvo/blob/main/resources/info_trees.tsv)**:
 A table gathering relevant log information on the progressive phylogenetic reconstruction approach, such as the software used at every analysis, the constraint, the model, RAM memory used, CPU time, the likelihood of the resulting tree, number of tips, number of long branches pruned, number of intruders removed and number of tips after cleaning the raw tree.
 
 **node_dates.tsv**:
