@@ -1,0 +1,159 @@
+supergroup	group	subgroup	node	calibration_source	min	max	usage	usage_comment	comment_calibration	reference_molClock	reference_fossil
+All	Eukaryotes	Eukaryotes	root	molClock		2500	yes			Strassert et al. 2021
+All	Archaeplastida	Archaeplastida	Archaeplastida	molClock	1800	2100	no			Strassert et al. 2021
+All	Discoba	Discoba	Discoba	molClock	1600	2200	no			Strassert et al. 2021
+All	Cryptista	Cryptista	Cryptista	molClock	1600	2000	no			Strassert et al. 2021
+All	Haptista	Haptista	Haptista	molClock	1600	2000	no			Strassert et al. 2021
+All	Rhizaria	Rhizaria	Rhizaria	molClock	1100	1700	no			Strassert et al. 2021
+All	Alveolata	Alveolata	Alveolata	molClock	1000	1500	no			Strassert et al. 2021
+All	Nucletmycea	Nucletmycea	Nucletmycea	molClock	900	1500	no			Strassert et al. 2021
+All	Stramenopiles	Stramenopiles	Stramenopiles	molClock	900	1500	no			Strassert et al. 2021
+All	Holozoa	Holozoa	Holozoa	molClock	800	1300	no			Strassert et al. 2021
+All	Amoebozoa	Amoebozoa	Amoebozoa	molClock	700	1700	no			Strassert et al. 2021
+All	Ancyromona	Ancyromona	Ancyromona	molClock	na	na	no			Strassert et al. 2021
+All	Apusomona	Apusomona	Apusomona	molClock	na	na	no			Strassert et al. 2021
+All	Breviatea	Breviatea	Breviatea	molClock	na	na	no			Strassert et al. 2021
+All	CruMs	CruMs	CruMs	molClock	na	na	no			Strassert et al. 2021
+All	Hemimastigophora	Hemimastigophora	Hemimastigophora	molClock	na	na	no			Strassert et al. 2021
+All	Metamonada	Metamonada	Metamonada	molClock	na	na	no			Strassert et al. 2021
+All	Telonemia	Telonemia	Telonemia	molClock	na	na	no			Strassert et al. 2021
+Alveolata	Alveolata	Ciliophora	Ciliates	biomarker	742	770?	yes			Porter 2006	Summons et al., 1988; Summons and walter, 1990
+Alveolata	Ciliophora	Ciliophora	Coleps sp.	Fossils-amber	220		yes			Silva Costa et al. 2021	Schmidt et al., 2006
+Alveolata	Ciliophora	Ciliophora	Vorticella sp.	Fossils-amber	200		yes	too divergent sequences		Silva Costa et al. 2021	Bomfleur et al., 2012
+Alveolata	Ciliophora	Ciliophora	Colpoda sp.	Fossils-amber	114		yes			Silva Costa et al. 2021	Martín-González et al., 2008
+Alveolata	Ciliophora	Ciliophora	Prorodon sp.	Fossils-amber	114		no	only one sequence		Silva Costa et al. 2021	Martín-González et al., 2008
+Alveolata	Ciliophora	Ciliophora	Bryometopus triquetrus	Fossils-amber	93	99	yes	4 OTUs with 1 read; different species, removing max constraint		Silva Costa et al. 2021	Schönborn et al., 1999 corrected by Schmidt et al., 2001
+Alveolata	Ciliophora	Ciliophora	Cyrtolophosis mucicola	Fossils-amber	93	99	yes	different species, removing max constraint		Silva Costa et al. 2021	Schönborn et al., 1999 corrected by Schmidt et al., 2001
+Alveolata	Ciliophora	Ciliophora	Paramecium triassicum	Fossils-amber	93	99	yes	different species, removing max constraint		Silva Costa et al. 2021	Schönborn et al., 1999 corrected by Schmidt et al., 2001
+Alveolata	Ciliophora	Ciliophora	Tetrahymena rostrata	Fossils-amber	93	99	yes	different species, removing max constraint		Silva Costa et al. 2021	Schönborn et al., 1999 corrected by Schmidt et al., 2001
+Alveolata	Ciliophora	Ciliophora	Pseudoplatyophrya nana	Fossils-amber	92	99	no	only one sequence		Silva Costa et al. 2021	Schönborn et al., 1999 corrected by Schmidt et al., 2001
+Alveolata	Ciliophora	Tintinnids?	Tintinnids?						Devonian?	reference?
+Alveolata	Dinoflagellates	Dinoflagellates	Dinoflagellates	biomarker	742	770?	no	Dinoflagellates or Dinophyceae	dinosterane	Porter 2006
+Alveolata	Dinoflagellates	Dinophycea	Core dinoflagellates (excl. Noctilucales)	fossils	235	300	yes			Strassert et al. 2021; Parfrey et al. 2011	Fensome et al. 1999
+Alveolata	Dinoflagellates	Dinophyceae	Peridiniales	fossils	210	235	no	polyphyletic		Strassert et al. 2021	Fensome et al. 1999
+Alveolata	Dinoflagellates	Dinophyceae	Gonyaulacales	fossils	200	235	yes			Strassert et al. 2021; Parfrey et al. 2011	Fensome et al. 1999
+Alveolata	Dinoflagellates	Peridiniales	Peridiniales_without_Heterocapsaceae	fossils	144	176	no	polyphyletic		Calasan et al. 2019	(Keupp, 1984; Keupp and Ilg, 1989
+Alveolata	Dinoflagellates	Peridiniales	Scrippsiella	fossils	68	75	yes			Calasan et al. 2019	Streng et al. 2004
+Alveolata	Dinoflagellates	Peridiniales	Thoracosphaera-Pfiesteria	fossils	41	75	no	polyphyletic		Calasan et al. 2019	Fensome et al., 1996
+Alveolata	Dinoflagellates	Peridiniales	Calciodinellum_coccoid_cells	fossils	35	40	no	not found		Calasan et al. 2019	Hildebrand-Habel and Streng, 2003
+Alveolata	Dinoflagellates	Ptychodiscales?
+Alveolata	Dinoflagellates	Symbiodinacea	Clades_C_H_F	Fossils-host	48	56	yes		indirect estimate	LaJeunesse et al., 2018
+Alveolata	Dinoflagellates	Symbiodinacea	Foraminifera_clade_D	Fossils-host	48	56	no	not found	indirect estimate	LaJeunesse et al., 2018
+Alveolata	Dinoflagellates	Symbiodinacea	Clade_G_Gerakladium	Fossils-host	15	34	no	not found	indirect estimate	LaJeunesse et al., 2018
+Alveolata	Dinoflagellates	Symbiodinacea	Clade_B_Breviolum	Fossils-oceanicVariance	5	7	no	only one sequence	indirect estimate	LaJeunesse et al., 2018
+Alveolata	Dinoflagellates	Symbiodinacea	CladeC_typeC27_typeC7	Fossils-oceanicVariance	3.1	7.2	no	not found	indirect estimate	LaJeunesse et al., 2018
+Alveolata	Dinoflagellates	Symbiodinacea	SubcladeG_Sendoclionum_Sspongiolum	Fossils-oceanicVariance	3.1	5.3	no	not found	indirect estimate	LaJeunesse et al., 2018
+Alveolata	Dinoflagellates	Symbiodinacea	Clade_C_Cladocopium	Fossils-oceanicVariance	3.1	4.7	yes		indirect estimate	LaJeunesse et al., 2018
+Amoebozoa	Amoebozoa	Amoebozoa	Tubulinea-Evosea	Vase-shaped microfossil	736		yes		In Strassert et al. (2021): Diversification between Tubulinea and Evosea was dated at 736		Porter et al, 2003; Fiz-Palacios et al. 2014; Lahr et al. 2019
+Amoebozoa	Amoebozoa	Tubulinea	Arcellinida	Vase-shaped microfossil	405	736	yes		In Strassert et al. (2021): Tubulinea at 405-736		Porter et al, 2003; Fiz-Palacios et al. 2014; Lahr et al. 2019
+Archaeplastida	Chloroplastida	Chlorophyta	Chlorophyta	fossils	1000		yes			Tang et al 2020
+Archaeplastida	Chloroplastida	Chlorophyta	Ulvophyceae	fossils	460	635	yes		Siphonous algae crown	Verbruggen et al. 2009	Zhang et al. 1998; Kordé, 1957; Chai et al. 2022
+Archaeplastida	Chloroplastida	Chlorophyta	core Halimedineae	fossils	460		yes			Verbruggen et al. 2009	Hoeg, 1927
+Archaeplastida	Chloroplastida	Streptophyta	Embryophyta	fossils	475	501	yes			Strassert et al. 2021; Sanchez-Baracaldo et al. 2017	Butterfield et al. 1994;Strother and Wellman 2016
+Archaeplastida	Chloroplastida	Streptophyta	Vascular plants	fossils	424		yes			Sanchez-Baracaldo et al. 2017; Silvestro et al. 2014	Steemans et al 2009
+Archaeplastida	Chloroplastida	Streptophyta	Angiosperms-Gymnosperms	fossils	385	470	yes			Strassert et al. 2021; Sanchez-Baracaldo et al. 2017	Brenner 1996; Turnau et al. 2009
+Archaeplastida	Chloroplastida	Streptophyta	Gymnosperms	fossils	385		yes			Sanchez-Baracaldo et al. 2017	Gerriene et al. 2004
+Archaeplastida	Chloroplastida	Streptophyta	Zygnemataceae	fossils	345		yes			Sanchez-Baracaldo et al. 2017	Mullins and Servais 2008
+Archaeplastida	Chloroplastida	Streptophyta	Angiosperms	fossils	130	385	yes			Silvestro et al. 2014; Silvestro et al. 2021; Sanchez-Baracaldo et al. 2017; Strassert et al. 2021	Strullu-Derrien et al. 2018; Friis et al. 2006
+Archaeplastida	Chloroplastida	Streptophyta	Eudicotyledons (Tricoplates)	fossils	124	130	yes*	ambiguous		Sanchez-Baracaldo et al. 2017 ; Strassert et al. 2021	Friis et al. 2006; Steemans et al. 2009; Sanchez-Baracaldo et al. 2017; Clarke et al. 2011
+Archaeplastida	Rhodophyta	Rhodophyta	Rhodophyta	fossils	1600		yes*	stem or crown?			Bengston et al. 2017
+Archaeplastida	Rhodophyta	Rhodophyta	Bangiophyceae	fossils	1050		yes*	polyphyletic		Sanchez-Baracaldo et al. 2017; Strassert et al. 2021	Hughens et al. 1990; Doyle et al. 1992; Butterfield et al. 2000; Knoll et al. 2013
+Archaeplastida	Rhodophyta	Rhodophyta	Floridiophyceae	fossils	600		yes			Sanchez-Baracaldo et al. 2017	Xiao et al. 2004
+Discoba	Euglenozoa	Euglenozoa	Euglenales/Eutreptiales	fossils	450		yes*	Moyeria: dubious association	Moyeria: dubious association	Strassert et al. 2021	Gray and Boucot 1989
+Haptista	Haptophyta	Pavlovales	Coccolithales/Isochrysidales	fossils	225	260	yes			Strassert et al. 2021	Young et al. 1994; Fujiwara et al. 2001
+Haptista	Haptophyta	Pavlovales	Calcidiscaceae/Coccolithaceae	fossils	65	225	yes			Strassert et al. 2021	Porter and Knoll, 2000; Porter et al, 2003
+Opisthokonta	Fungi	Fungi	Early Fungi	fossils	890	1010	yes			Loron et al. 2019
+Opisthokonta	Fungi	Fungi	Chytridiomycota	fossils	410		yes			Strassert et al. 2021	Stubblefield et al. 1985
+Opisthokonta	Fungi	Fungi	Ascomycota	fossils	400		yes			Strassert et al. 2021	Taylor et al. 1999
+Opisthokonta	Fungi	Fungi	Basidiomycota	fossils	360		yes			Strassert et al. 2021	Stubblefield et al. 1985
+Opisthokonta	Fungi	Fungi	Agaricomycetes	molClock	300	600	yes		indirect estimate	Varga et al. 2019
+Opisthokonta	Fungi	Fungi	Hymenochaetales	fossils	127	250	no	only one sequence		Varga et al. 2019	Smith et al. 2004
+Opisthokonta	Fungi	Fungi	Agaricales	fossils	105	210	no	not found		Varga et al. 2019	Poinar & Buckley 2007
+Opisthokonta	Fungi	Fungi	marasmioid_clade	fossils	92	180	yes			Varga et al. 2019	Hibbet et al. 1997
+Opisthokonta	Fungi	Fungi	Suillaceae	fossils	50	100	yes			Varga et al. 2019	Lepage et al. 1997
+Opisthokonta	Fungi	Fungi	Nidulariaceae	fossils	45	90	no	too divergent sequences		Varga et al. 2019	Poinar 2014
+Opisthokonta	Fungi	Fungi	Trametes	fossils	45	90	yes			Varga et al. 2019	Knoblock & Kotlaba 1994
+Opisthokonta	Fungi	Fungi	Ganoderma	fossils	18	50	no	polyphyletic		Varga et al. 2019	Fleischmann et al. 2007
+Opisthokonta	Fungi	Fungi	Termitomyces	fossils	7	30	no	polyphyletic		Varga et al. 2019	Duringer et al. 2006
+Opisthokonta	Metazoa	Bilateria	Bilateria	fossils	550	636	yes			Strassert et al. 2021	Benton et al. 2015
+Opisthokonta	Metazoa	Bilateria	Deuterostomia	fossils	515	636	yes			Strassert et al. 2021	Benton et al. 2015
+Opisthokonta	Metazoa	Bilateria	Chordata	fossils	514	636	yes			Strassert et al. 2021	Benton et al. 2015
+Opisthokonta	Metazoa	Bilateria	Amniota	fossils	318	333	yes			Strassert et al. 2021	Taylor et al. 1994; Strullu-Derrien et al. 2018
+Opisthokonta	Metazoa	birds	Aves sensu stricto	fossils	66	110	yes			Jets et al. 2018; Strassert et al. 2021	You et al. 2006; Benton et al. 2015
+Opisthokonta	Metazoa	birds	Stem_Anatidae	fossils	66	98.11	no*	temporal		Jets et al. 2022	Clarke et al. 2005
+Opisthokonta	Metazoa	birds	Stem_Sphenisciformes	fossils	60.5	96.62	no*	temporal		Jets et al. 2024	Slack et al. 2006
+Opisthokonta	Metazoa	birds	Crown_Charadriiformes	fossils	55.8	95.35	no*	temporal		Jets et al. 2028	Bertelli et al. 2010; Dyke & van Tuinen 2004
+Opisthokonta	Metazoa	birds	Stem_Psittacidae+Cacatuidae	fossils	54	94.86	no*	temporal		Jets et al. 2027	Waterhouse et al. 2008; Kundu et al. 2011; Pacheco et al. 2011
+Opisthokonta	Metazoa	birds	Stem_Fregatidae	fossils	52.5	94.46	no*	temporal		Jets et al. 2023	Olson 1977; Simmons et al 2008
+Opisthokonta	Metazoa	birds	Stem_Apodidae	fossils	47.5	92.92	no*	temporal		Jets et al. 2025	Mayr 2003; Harrison 1984
+Opisthokonta	Metazoa	birds	Stem_Coraciidae+Brachypteraciidae	fossils	47.5	92.92	no*	temporal		Jets et al. 2021	Franzen 2005; Mayr & Mourer-Chauvire 2000
+Opisthokonta	Metazoa	birds	Stem_Upupidae+Phoeniculidae	fossils	47.5	92.92	no*	temporal		Jets et al. 2020	Mayr 2000; Franzen 2005
+Opisthokonta	Metazoa	birds	Stem_Grues	fossils	30	88.38	no*	temporal		Jets et al. 2026	Mayr 2005b
+Opisthokonta	Metazoa	birds	Stem_Pici(Picidae,Ramphastidae,Indicataoridae)	fossils	30	88.38	no*	temporal		Jets et al. 2019	Mayr 2005a
+Opisthokonta	Metazoa	Cnidaria	Cnidaria	fossils	526	636	yes				Benton et al. 2015
+Opisthokonta	Metazoa	Ecdysozoa	Arthropoda	fossils	514	636	yes			Strassert et al. 2021	Benton et al. 2015
+Opisthokonta	Metazoa	Lophotrocozoa	Mollusca	fossils	532	549	no*	temporal		Strassert et al. 2021	Benton et al. 2015; Love et al. 2009
+Opisthokonta	Metazoa	Mammals	Mammals	fossils	164.9	201.5	yes			Upham et al. 2019	Benton et al. 2015
+Opisthokonta	Metazoa	Mammals	Theria	fossils	156.3	169.6	no	not found		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Placentalia	fossils	61.6	164.6	yes			Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Euarchontoglires	fossils	61	165	no*	temporal		Strassert et al. 2021	Benton et al. 2015
+Opisthokonta	Metazoa	Mammals	Afrotheria	fossils	56	164.6	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Primates	fossils	56	66	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Rodentia	fossils	56	66	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Artiodactyla	fossils	52.4	66	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Xenarthra	fossils	47.6	164.6	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Marsupialia	fossils	47.6	131.3	no*	temporal		Upham et al. 2019	Benton et al. 2015
+Opisthokonta	Metazoa	Mammals	Lagomorpha	fossils	47.6	66	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Chiroptera	fossils	45	58.9	no*	temporal		Upham et al. 2019	Benton et al. 2015
+Opisthokonta	Metazoa	Mammals	Caviomorpha-Phiomorpha	fossils	40.94	56	no*	temporal		Upham et al. 2019	Benton et al. 2015
+Opisthokonta	Metazoa	Mammals	Carnivora	fossils	37.3	66	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Anthropoidea	fossils	33.9	66	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Strepsirhini	fossils	33.9	56	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Monotremata	fossils	15.97	113	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Mammals	Macropodoidea	fossils	15.97	54.65	no*	temporal		Upham et al. 2019	Phillips 2015
+Opisthokonta	Metazoa	Metazoa	Metazoa	fossils	635	833	yes			Strassert et al. 2021	Benton et al. 2015
+Opisthokonta	Metazoa	Metazoa	Eumetazoa	fossils	550	636	no	not found		Strassert et al. 2021	Benton et al. 2015
+Rhizaria	Cercozoa	Cercozoa	Melicerion_poilon	biomarker	742		yes		stratigraphic range 742-770	Porter 2006	Porter and Knoll, 2000; Porter et al, 2003
+Rhizaria	Cercozoa	Thecofilosa	Ebriacea
+Rhizaria	Cercozoa	Thecofilosa	Phaeodarea
+Rhizaria	Foraminifera	Foraminifera	Foraminifera	MolClock-fossils	542	920	yes			Groussin et al., 2011	McIlroy et al. 2001; Seilacher et al., 2003
+Rhizaria	Foraminifera	Foraminifera	Textularida	fossils	350	400	no	polyphyletic		Groussin et al., 2011
+Rhizaria	Foraminifera	Foraminifera	Miliolids	fossils	350		yes			Groussin et al., 2011
+Rhizaria	Foraminifera	Foraminifera	Rotaliida	fossils		200	no	polyphyletic		Groussin et al., 2011
+Rhizaria	Radiolaria	Nassellaria	Nassellaria	MolClock-fossils	342	514	yes	wide range to accommodate uncertainty in the calibration	Disagreement molClock and fossils	Sandin et al. 2019	De Wever et al. 2001
+Rhizaria	Radiolaria	Nassellaria	Eucyrtidioidea	fossils	230	262	yes			Sandin et al. 2019	Sugiyama, 1997
+Rhizaria	Radiolaria	Nassellaria	Acropyramioidea	fossils	229	262	no	only two sequences		Sandin 2019	De Wever et al. 2001
+Rhizaria	Radiolaria	Nassellaria	Lophophaenidae	fossils	174	207	yes			Sandin et al. 2019	De Wever et al. 1982
+Rhizaria	Radiolaria	Nassellaria	Artostrobioidea	fossils	165	198	yes			Sandin et al. 2019	Matsuoka, 2004
+Rhizaria	Radiolaria	Nassellaria	Sethoperidae	fossils	144	216	no	only one sequence		Sandin et al. 2019	O’Dogherty et al. 2009
+Rhizaria	Radiolaria	Nassellaria	Cannobotryoidea	fossils	106	139	yes			Sandin et al. 2019	Matsuzaki et al. 2015; O’Dogherty et al. 2009
+Rhizaria	Radiolaria	Nassellaria	Acanthodesmoidea	fossils	62	71	yes			Sandin et al. 2019	Kozlova 1983, 1999
+Rhizaria	Radiolaria	Nassellaria	Bekomidae	fossils	58	66	yes			Sandin et al. 2019	De Wever et al. 2001; Nishimura 1992
+Rhizaria	Radiolaria	Nassellaria	Pterocorythoidea	fossils	53	61	yes			Sandin et al. 2019	Sanfilippo and Riedel 1992
+Rhizaria	Radiolaria	Nassellaria	Carpocaniidae	fossils	35	41	no	only three sequences		Sandin et al. 2019	De Wever et al. 2001; Kamikuri et al. 2012
+Rhizaria	Radiolaria	Nassellaria	Collosphaeridae	fossils	23	25	yes			Sandin 2019	De Wever et al. 2001
+Rhizaria	Radiolaria	Spumellaria	Spumellaria	fossils	453	584	yes		Strong agreement molClock and fossils	Sandin et al. 2021	De Wever et al. 2001
+Rhizaria	Radiolaria	Spumellaria	Hexastyloidea	fossils	226	258	yes			Sandin et al. 2021	O’Dogherty et al. 2011
+Rhizaria	Radiolaria	Spumellaria	Liosphaeroidea	fossils	202	264	yes			Sandin et al. 2021	Matsuzaki et al. 2015
+Rhizaria	Radiolaria	Spumellaria	Actinommidae	fossils	147	193	yes			Sandin et al. 2021	O’Dogherty et al. 2011
+Rhizaria	Radiolaria	Spumellaria	Rhizosphaeroidea	fossils	138	158	no	only one sequence		Sandin et al. 2021	Afanasieva and Amon 2006; De Wever et al. 2001; Dumitrica 2017; Petrushevskaya 1975
+Rhizaria	Radiolaria	Spumellaria	Pylonioidea	fossils	90	104	yes			Sandin et al. 2021	Afanasieva and Amon 2006; De Wever et al. 2001, 2003
+Rhizaria	Radiolaria	Spumellaria	Coccodiscoidea	fossils	42	48	yes			Sandin et al. 2021	Afanasieva and Amon 2006; De Wever et al. 2001
+Stramenopiles	Dictyochophyceae	Dictyochales	Silicoflagellates
+Stramenopiles	Ochrophyta	Diatoms	Bacillariophyta	fossils	190	541	yes			Strassert et al. 2021	McIlroy et al. 2001; Seilacher et al., 2003
+Stramenopiles	Ochrophyta	Diatoms	Coscinodiscophytina	fossils	190		yes*	to check, old taxonomy		Sanchez-Baracaldo et al. 2017	Sims et al. 2006
+Stramenopiles	Ochrophyta	Diatoms	Bacillariophytina	fossils	110		yes*	to check, old taxonomy		Sanchez-Baracaldo et al. 2017	Sims et al. 2006
+Stramenopiles	Ochrophyta	Diatoms	Stephanopyxis	fossils	100	112	no	only one sequence		Sorhannus, 2007
+Stramenopiles	Ochrophyta	Diatoms	Stellarima	fossils	94	100	no	only three sequences		Lewitus et al., 2018	Tapia & Harwood, 2002
+Stramenopiles	Ochrophyta	Diatoms	Rhizosolenids	fossils	89	94				Lewitus et al., 2018	Damste et al., 2004
+Stramenopiles	Ochrophyta	Diatoms	Coscinodiscus	fossils	87	121	yes			Lewitus et al., 2018	Girard et al., 2009; Sims et al., 2006
+Stramenopiles	Ochrophyta	Diatoms	Pennates	fossils	75	190	yes		In Lewitus et al, 2018: min 108 – max 142; in Strassert et al, 2021: max 190	Lewitus et al., 2018; Strassert et al. 2021	Sims et al., 2006; Sorhannus, 2007
+Stramenopiles	Ochrophyta	Diatoms	Thalassiosirales	fossils	72	104	yes			Lewitus et al., 2018	Kooistra & Medlin, 1996
+Stramenopiles	Ochrophyta	Diatoms	Raphoneis	fossils	71	84	no	not found		Lewitus et al., 2018	Tapia & Harwood, 2002
+Stramenopiles	Ochrophyta	Diatoms	Odontella	fossils	66	71	yes			Sorhannus, 2007
+Stramenopiles	Ochrophyta	Diatoms	Skeletonema	fossils	65	90	yes			Lewitus et al., 2018	Strelnikova, Nova hedwigia. Beihefte, 1975
+Stramenopiles	Ochrophyta	Diatoms	Chaetoceros	phylogenetic/fossils	55	65	yes			Lewitus et al., 2018	Ciesielski et al., 1991; Kooistra & Medlin, 1996
+Stramenopiles	Ochrophyta	Diatoms	Pinnularia	fossils	47	80	yes			Lewitus et al., 2018	Souffreau et al., 2011
+Stramenopiles	Ochrophyta	Diatoms	Aulacoseira	fossils	32	65	yes			Lewitus et al., 2018	Wolfe et al., 1996
+Stramenopiles	Ochrophyta	Diatoms	Thalassionema	fossils	16	23	yes			Lewitus et al., 2018	Sims et al,. 2006
+Stramenopiles	Ochrophyta	Diatoms	Surirellaceae	fossils	11.6	16	no			Sorhannus, 2007
