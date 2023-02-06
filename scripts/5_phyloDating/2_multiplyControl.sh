@@ -27,7 +27,7 @@ cp ../$CONTROL .
 fileNameReplace.py -f $CONTROL -l $IDs
 
 # Check if all renaming worked ---------------------------------------------------------------------
-treePL_testControlFile.py -c ${CONTROL/.ctl/_renamed.ctl} -t "$toDATE"$(ls "$toDATE" | head -n 1) -e
+1.2_treePL_testControlFile.py -c ${CONTROL/.ctl/_renamed.ctl} -t "$toDATE"$(ls "$toDATE" | head -n 1) -e
 
 # Create a control file for every tree -------------------------------------------------------------
 for FILE in $(ls $toDATE*renamed.tre); do
@@ -39,7 +39,7 @@ for FILE in $(ls $toDATE*renamed.tre); do
 	sed -i "s/outfile =/outfile = $OUT/g" $toDATE${TREE/.tre/.ctl}
 done
 
-# And start dating using the "treeStepDating_3_treePL_replicates.sh" to run 100 replicates for each tree
+# And start dating using the "3_treePL_replicates.sh" to run 100 replicates for each tree
 
 # Although if you are interested, you can always run one analysis:
 # cd toDate

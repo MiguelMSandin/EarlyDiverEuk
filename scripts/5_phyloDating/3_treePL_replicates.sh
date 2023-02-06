@@ -43,7 +43,7 @@ newick2nexus.py -t "$OUTFILE" -o "${OUTFILE/.tre/.nex}"
 
 # Summarise all trees into one tree with the median node heights -----------------------------------
 echo -e "  Annotating nodes\n"
-/home/miguel/softwares/BEAST/BEASTv1.10.4/bin/treeannotator -heights median "${OUTFILE/.tre/.nex}" "${OUTFILE/.tre/_median.tre}"
+treeannotator -heights median "${OUTFILE/.tre/.nex}" "${OUTFILE/.tre/_median.tre}"
 
 # Set file names -----------------------------------------------------------------------------------
 echo "Date trees written to: $OUTFILE"

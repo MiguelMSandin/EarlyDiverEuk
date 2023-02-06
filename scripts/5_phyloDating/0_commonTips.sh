@@ -2,9 +2,7 @@
 
 # Download in-house scripts ------------------------------------------------------------------------
 wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeCompareTips.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treePL_summaryControlFile.py
 wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeLCAcount.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treePL_testControlFile.py
 wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeTipRename.py
 wget https://raw.githubusercontent.com/MiguelMSandin/random/main/others/fileNameReplace.py
 wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/newick2nexus.py
