@@ -1,33 +1,50 @@
-# Scripts
+# Eco-evolution of eukaryotes
 
-In this directory you will find all scripts needed to replicate the analyses in a methodological order. You can find a more detailed readme file in each subfolder. Briefly:
+## Dependencies
+- [BAMM](http://bamm-project.org/)
+- [ClaDS](https://hmorlon.github.io/PANDA.jl/dev/)
+- [Julia](https://julialang.org/)
+  - Packages: ArgParse, JLD2, PANDA
+- [MAFFT](https://mafft.cbrc.jp/alignment/software/)
+- [mothur](https://mothur.org/)
+- [Python](https://www.python.org/)
+  - Modules:
+- [R](https://www.r-project.org/)
+  - Packages: ape, BAMMtools, coda, data.table, dplyr, ggplot2, ggtree, HDInterval, optparse, phangorn, RPANDA, tidyr, treeio, vegan
+- [RAxML](https://github.com/stamatak/standard-RAxML)
+- [RAxML-ng](https://github.com/amkozlov/raxml-ng)
+- [treeannotator](https://beast.community/treeannotator)
+- [TreePL](https://github.com/blackrim/treePL)
+- [trimAl](http://trimal.cgenomics.org/downloads)
+- [IQ-TREE](http://www.iqtree.org/)
+#### Optional
+- [Rstudio](https://rstudio.com/products/rstudio/download/)
+- [figTree](http://tree.bio.ed.ac.uk/software/figtree/)
 
-**0_prepareFiles/**:
-Download and prepare files for downstream analyses.
+### In-house dependencies (not included in this repository)
+- [buildConstrainTree.sh](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/buildConstrainTree.sh)
+- [checkConstrainTaxa.sh](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/checkConstrainTaxa.sh)
+- [checkConstrainTree.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/checkConstrainTree.py)
+- [fastaConcat.py](https://github.com/MiguelMSandin/random/blob/main/fasta/fastaConcat.py)
+- [fastaRevCom.py](https://github.com/MiguelMSandin/random/blob/main/fasta/fastaRevCom.py)
+- [fileNameReplace.py](https://github.com/MiguelMSandin/random/blob/main/others/fileNameReplace.py)
+- [findSeqs.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/findSeqs.py)
+- [newick2nexus.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/newick2nexus.py)
+- [sequenceSelect.py](https://github.com/MiguelMSandin/random/blob/main/fasta/sequenceSelect.py)
+- [treeCheckIntruders.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeCheckIntruders.py)
+- [treeColourBranches.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeColourBranches.py)
+- [treeCompareTips.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeCompareTips.py)
+- [treePruneList.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treePruneList.py)
+- [treePruneOutliers.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treePruneOutliers.py)
+- [treeRemoveBranchLengths.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeRemoveBranchLengths.py)
+- [treeRootOutgroup.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeRootOutgroup.py)
+- [treeTipRename.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeTipRename.py)
+#### Optional
+- [treeLCAcount.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeLCAcount.py)
+- [treeStats.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeStats.py)
 
-**1_constraintTree/**:
-Build the initial constraint tree.
+## Introduction
 
-**2_phyloStep1/**:
-Build the initial phylogenetic tree including only OTUs with 10 or more reads using Maximum Likelihood in RAxML (GTR+CAT and GTR+Gamma) and RAxML-ng (GTR+Gamma).
+## Data preparation
 
-**3_phyloStep2/**:
-Continue building the phylognetic tree including OTUs with 2 or more reads using maximum likelihood in IQTree, and the previous trees as constraint.
-
-**4_phyloStep3/**:
-Finish building the phylogenetic tree including all OTUs using maximum likelihood in IQTree, and the previous trees as constraint.
-
-**5_phyloDating/**:
-Calibrate in time the phylogenetic trees using Maximum Penalized likelihood to date the phylogenetic distance in TreePL.
-
-**6_processDatedTrees/**:
-Extract Lineages Through Time plots and slopes of all dated trees and extract sub-clades of most abundant supergroups (with more than 300 tips).
-
-**7_diversity/**:
-Estimate the fraction of the total diversity that each tree represent by different approaches (Preston Log-Normal model and an in-house approach based on phylogenetic distance).
-
-**8_diversificationBAMM/**:
-Estimate diversification analyses in BAMM to extract potential shifts in diversification rates.
-
-**9_diversificationCLaDS/**:
-Estimate diversification analyses in CLaDS to extract diversification rates.
+## Phylogenetic pipeline and curation
