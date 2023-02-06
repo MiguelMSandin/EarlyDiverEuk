@@ -1,4 +1,6 @@
 # Eco-evolution of eukaryotes
+In this repository you will find all materials, resources and scripts needed to replicate the study:
+****INSERT_LINK_HERE****
 
 ## Dependencies
 - [BAMM](http://bamm-project.org/)
@@ -8,7 +10,7 @@
 - [MAFFT](https://mafft.cbrc.jp/alignment/software/)
 - [mothur](https://mothur.org/)
 - [Python](https://www.python.org/)
-  - Modules:
+  - Modules: argparse, Bio (SeqIO, Phylo), ete3 (Tree), numpy, or, re, statistics, subprocess, sys
 - [R](https://www.r-project.org/)
   - Packages: ape, BAMMtools, coda, data.table, dplyr, ggplot2, ggtree, HDInterval, optparse, phangorn, RPANDA, tidyr, treeio, vegan
 - [RAxML](https://github.com/stamatak/standard-RAxML)
