@@ -4,13 +4,13 @@
 - BAMM
 - CLaDS
 - Julia
- -  Packages: ArgParse, JLD2, PANDA
+  - Packages: ArgParse, JLD2, PANDA
 - [MAFFT](https://mafft.cbrc.jp/alignment/software/)
 - mothur
- - [Python](https://www.python.org/)
--  Modules:
+- [Python](https://www.python.org/)
+  - Modules:
 - [R](https://www.r-project.org/)
- -  Packages: ape, BAMMtools, coda, data.table, dplyr, ggplot2, ggtree, HDInterval, optparse, phangorn, RPANDA, tidyr, treeio, vegan
+  - Packages: ape, BAMMtools, coda, data.table, dplyr, ggplot2, ggtree, HDInterval, optparse, phangorn, RPANDA, tidyr, treeio, vegan
 - [RAxML](https://github.com/stamatak/standard-RAxML)
 - [RAxML-ng](https://github.com/amkozlov/raxml-ng)
 - treeannotator
