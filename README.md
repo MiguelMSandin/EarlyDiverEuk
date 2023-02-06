@@ -1,56 +1,33 @@
-# Eco-evolution of eukaryotes
+# Scripts
 
-## Dependencies
-- BAMM
-- CLaDS
-- Julia
-  - Packages: ArgParse, JLD2, PANDA
-- [MAFFT](https://mafft.cbrc.jp/alignment/software/)
-- mothur
-- [Python](https://www.python.org/)
-  - Modules:
-- [R](https://www.r-project.org/)
-  - Packages: ape, BAMMtools, coda, data.table, dplyr, ggplot2, ggtree, HDInterval, optparse, phangorn, RPANDA, tidyr, treeio, vegan
-- [RAxML](https://github.com/stamatak/standard-RAxML)
-- [RAxML-ng](https://github.com/amkozlov/raxml-ng)
-- treeannotator
-- TreePL
-- [trimAl](http://trimal.cgenomics.org/downloads)
-- [IQ-TREE](http://www.iqtree.org/)
-#### Optional
-- [Rstudio](https://rstudio.com/products/rstudio/download/)
-- [figTree](http://tree.bio.ed.ac.uk/software/figtree/)
+In this directory you will find all scripts needed to replicate the analyses in a methodological order. You can find a more detailed readme file in each subfolder. Briefly:
 
-### In-house dependencies
-- sequenceSelect.py
-- fastaConcat.py
-- checkConstrainTree.py
-- checkConstrainTaxa.sh
-- buildConstrainTree.sh
-- findSeqs.py
-- fastaRevCom.py
-- treePruneOutliers.py
-- treeRootOutgroup.py
-- treeColourBranches.py
-- treeRemoveBranchLengths.py
-- treePruneList.py
-- treeCheckIntruders.py
-- newick2nexus.py
-- treeTipRename.py
-- treeCompareTips.py
--
--
--
--
-- fileNameReplace.py
-- treePL_summaryControlFile.py
-- treePL_testControlFile.py
-#### Optional
-- treeStats.py
-- treeLCAcount.py
+**0_prepareFiles/**:
+Download and prepare files for downstream analyses.
 
-## Introduction
+**1_constraintTree/**:
+Build the initial constraint tree.
 
-## Data preparation
+**2_phyloStep1/**:
+Build the initial phylogenetic tree including only OTUs with 10 or more reads using Maximum Likelihood in RAxML (GTR+CAT and GTR+Gamma) and RAxML-ng (GTR+Gamma).
 
-## Phylogenetic pipeline and curation
+**3_phyloStep2/**:
+Continue building the phylognetic tree including OTUs with 2 or more reads using maximum likelihood in IQTree, and the previous trees as constraint.
+
+**4_phyloStep3/**:
+Finish building the phylogenetic tree including all OTUs using maximum likelihood in IQTree, and the previous trees as constraint.
+
+**5_phyloDating/**:
+Calibrate in time the phylogenetic trees using Maximum Penalized likelihood to date the phylogenetic distance in TreePL.
+
+**6_processDatedTrees/**:
+Extract Lineages Through Time plots and slopes of all dated trees and extract sub-clades of most abundant supergroups (with more than 300 tips).
+
+**7_diversity/**:
+Estimate the fraction of the total diversity that each tree represent by different approaches (Preston Log-Normal model and an in-house approach based on phylogenetic distance).
+
+**8_diversificationBAMM/**:
+Estimate diversification analyses in BAMM to extract potential shifts in diversification rates.
+
+**9_diversificationCLaDS/**:
+Estimate diversification analyses in CLaDS to extract diversification rates.
