@@ -29,7 +29,7 @@ Since there are some critical groups with few sequences in databases, we will ma
 
 Before beginning the analyses, it is important to keep a clear and structured directory. I preferred to let this aspect to your personal choice. Although I opted for the following structure:  
 ```bash
-cd eukEcoEvo
+cd PATH/TO/eukEcoEvo
 tree -L 2 -d
 .
 ├── data
