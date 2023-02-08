@@ -1,9 +1,5 @@
 #!/bin/bash
 
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeLTTsubTrees.R
-chmod +x *R
-mv ../*R .
-
 # The dated and summarised tree --------------------------------------------------------------------
 TREE=""
 # The reverse list of IDs to reverse
