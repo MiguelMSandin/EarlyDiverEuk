@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# Download in-house scripts ------------------------------------------------------------------------
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeCompareTips.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeLCAcount.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeTipRename.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/others/fileNameReplace.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/newick2nexus.py
-
-chmod +x *py
-mv *py ../
-
 # We build the control file based on a tree containing tips common to all trees --------------------
 # In other words, we remove those tips that do not appear in all trees -----------------------------
 
