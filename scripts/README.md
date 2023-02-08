@@ -1,6 +1,7 @@
 # Scripts
 
-In this directory you will find all scripts needed to replicate the analyses in a methodological order. You can find a more detailed readme file in each subfolder. Briefly:
+In this directory you will find all scripts needed to replicate the analyses in a methodological order.  
+You can find a more detailed readme file in each subfolder. Briefly:  
 
 [**0_prepareFiles/**](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/0_prepareFiles):  
 Download and prepare files for downstream analyses.  
