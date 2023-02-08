@@ -7,11 +7,11 @@ Create a directory and ```cd``` to it. For example:
 mkdir eukEcoEvo
 cd eukEcoEvo
 ```
-Now create another directory for the 'data' and again '''cd''' to it:  
-'''bash
+Now create another directory for the ```data``` and again ```cd``` to it:  
+```bash
 mkdir data
 cd data
-'''
+```
 
 [0_download.sh](https://github.com/MiguelMSandin/EukEcoEvo/blob/main/scripts/0_prepareFiles/0_download.sh):  
 With this script we will download all in-house dependencies and the original datasets. We will also modify the sequence names of the fasta files to accommodate different software requirements.  
@@ -27,7 +27,7 @@ And now we subset the whole dataset based on biological relevance. So we have 3 
 Since there are some critical groups with few sequences in databases, we will manually complement the two latter files with such sequences (from the lists [otus_reads10_complemented.list](https://github.com/MiguelMSandin/EukEcoEvo/blob/main/resources/otus_reads10_complemented.list) and [otus_reads2_complemented.list](https://github.com/MiguelMSandin/EukEcoEvo/blob/main/resources/otus_reads2_complemented.list)). These groups are: Ancoracystida, Cephalochordata, Filasterea, Glaucocystophyceae, Gromia, Hemichordata, Katablepharidaceae, Malawimonadidae, Mantamonadida, Mesostigmatophyceae, Monothalamids, Noctilucophyceae, Palmophyllophyceae, Parabasalia, Placozoa, Pluriformea, Preaxostyla, Protalveolata, Rhodelphea, Synchromophyceae and Tubothalamea.
 
 Before beginning the analyses, it is important to keep a clear and structured directory. I preferred to let this aspect to your personal choice. Although I opted for the following structure:  
-'''bash
+```bash
 cd eukEcoEvo
 tree -L 2 -d
 ├── data
@@ -55,4 +55,4 @@ tree -L 2 -d
     ├── 7_diversity
     ├── 8_diversificationBAMM
     └── 9_diversificationCLaDS
-'''
+```
