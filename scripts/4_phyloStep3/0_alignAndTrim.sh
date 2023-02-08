@@ -1,12 +1,5 @@
 #! bin/bash
 
-# Download in-house scripts ------------------------------------------------------------------------
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeCheckIntruders.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treePruneList.py
-
-chmod +x *py
-mv *py ../
-
 # Align forward dataset ----------------------------------------------------------------------------
 # In slurm cluster you might ask for 250GB of RAM memory and about 10 days to be in the safe side
 THREADS="16"
