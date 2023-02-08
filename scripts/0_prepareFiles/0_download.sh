@@ -2,10 +2,29 @@
 
 # Download in-house scripts ------------------------------------------------------------------------
 wget https://raw.githubusercontent.com/MiguelMSandin/random/main/fasta/fastaRename.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/fasta/fastaRevCom.py
 wget https://raw.githubusercontent.com/MiguelMSandin/random/main/fasta/sequenceSelect.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/others/fileNameReplace.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/buildConstrainTree.sh
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/checkConstrainTaxa.sh
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/checkConstrainTree.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/findSeqs.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/newick2nexus.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeCheckIntruders.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeColourBranches.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeCompareTips.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeLCAcount.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeLTTsubTrees.R
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treePruneList.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treePruneOutliers.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeRemoveBranchLengths.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeRootOutgroup.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeStats.py
+wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeTipRename.py
 
+# Add executable permissions and move to your preferred directory (i.e.; /usr/local/bin/)
 chmod +x *py
-mv *py ../
+sudo mv *py /usr/local/bin/
 
 # Download PR2 database ----------------------------------------------------------------------------
 wget https://github.com/pr2database/pr2database/releases/download/v4.14.0/pr2_version_4.14.0_SSU_taxo_long.fasta.gz
