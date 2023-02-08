@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# Download in-house scripts ------------------------------------------------------------------------
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/checkConstrainTree.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/checkConstrainTaxa.sh
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/buildConstrainTree.sh
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/findSeqs.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeStats.py
-
-chmod +x *py
-mv *py ../
-
 # Set file names -----------------------------------------------------------------------------------
 FASTA="pb_pr2_reads10c.fasta"
 TREE="eukProt_v9.tre"
