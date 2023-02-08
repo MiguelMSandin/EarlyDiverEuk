@@ -2,11 +2,11 @@
 
 Here we simply want to download and assemble the datasets for downstream analyses.  
   
-Create a directory and '''cd''' to it. For example:  
-'''bash
+Create a directory and ```cd``` to it. For example:  
+```bash
 mkdir eukEcoEvo
 cd eukEcoEvo
-'''
+```
 Now create another directory for the 'data' and again '''cd''' to it:  
 '''bash
 mkdir data
