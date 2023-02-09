@@ -14,7 +14,7 @@ We will also perform a second thorough search (as above) with the model of nucle
 [3_phyloRAxML-ng.sh](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/2_phyloStep1/3_phyloRAxML-ng.sh):  
 Lastly, we will also perform 10 quick searches in ```RAxML-ng``` and select the 4 best scoring trees to allow a greater phylogenetic uncertainty in deep nodes.  
 
-We will perform the same 6 phylognetic analyses over the reverse alignment.  
+We will perform the same 6 phylognetic analyses over the reverse alignment:  
 [4_phyloRAxML-GTR-GAMMA_reverse.sh](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/2_phyloStep1/4_phyloRAxML-GTR-GAMMA_reverse.sh).  
 [5_phyloRAxML-GTR-CAT_reverse.sh](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/2_phyloStep1/5_phyloRAxML-GTR-CAT_reverse.sh).  
 [6_phyloRAxML-ng_reverse.sh](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/2_phyloStep1/6_phyloRAxML-ng_reverse.sh).  
