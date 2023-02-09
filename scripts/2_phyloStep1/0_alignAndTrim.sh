@@ -1,15 +1,5 @@
 #! bin/bash
 
-# Download in-house scripts ------------------------------------------------------------------------
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/fasta/fastaRevCom.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treePruneOutliers.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeRootOutgroup.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeColourBranches.py
-wget https://raw.githubusercontent.com/MiguelMSandin/random/main/phylogenetics/treeRemoveBranchLengths.py
-
-chmod +x *py
-mv *py ../
-
 # Align forward dataset ----------------------------------------------------------------------------
 # In slurm cluster you might ask for 100GB of RAM memory and about 5 days to be in the safe side
 THREADS="16"
