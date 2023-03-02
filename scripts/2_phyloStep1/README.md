@@ -9,7 +9,7 @@ In addition, we will align the sequences over the forward and reverse dataset in
 We will first perform a thorough search for the maximum likelihood tree over 100 BootStrap replicates in ```RAxML``` including the option ```-D```, which optimizes the ML search convergence criteria for very large datasets and the model of nucleotide substitution GTR+Gamma (```-m GTRGAMMA```).  
 
 [2_phyloRAxML-GTR-CAT.sh](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/2_phyloStep1/2_phyloRAxML-GTR-CAT.sh):  
-We will also perform a second thorough search (as above) with the model of nucleotide substitution GTR+CAT ()```-m GTRCAT```).  
+We will also perform a second thorough search (as above) with the model of nucleotide substitution GTR+CAT (```-m GTRCAT```).  
 
 [3_phyloRAxML-ng.sh](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/2_phyloStep1/3_phyloRAxML-ng.sh):  
 Lastly, we will also perform 10 quick searches in ```RAxML-ng``` and select the 4 best scoring trees to allow a greater phylogenetic uncertainty in deep nodes.  
