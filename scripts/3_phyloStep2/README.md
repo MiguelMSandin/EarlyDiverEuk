@@ -1,6 +1,6 @@
 # 3_phyloStep2/
 
-This step and the following ([4_phyloStep3](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/4_phyloStep3)) are aimed at completing the phylogenetic trees based on biological relevance. Here we will include those OTUs representatives of at least 2 other sequences or with at least 2 reads. And given the relatively large number of sequences we will use the '*-fast*' option of IQ-Tree to infer the phylogenetic trees.  
+This step and the following ([4_phyloStep3](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/4_phyloStep3)) are aimed at completing the phylogenetic trees based on biological relevance. Here we will include those OTUs representatives of at least 2 other sequences or with at least 2 reads. And given the relatively large number of sequences we will use the ```-fast``` option of IQ-Tree to infer the phylogenetic trees.  
 
 [0_alignAndTrim.sh](https://github.com/MiguelMSandin/EukEcoEvo/blob/main/scripts/3_phyloStep2/0_alignAndTrim.sh):  
 First, we will align and trim both datasets, the forward and the reverse.  
