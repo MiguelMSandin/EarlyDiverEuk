@@ -1,4 +1,4 @@
-# 3_phyloStep2/
+# 5_phyloDating
 
 After resolving all phylogenetic trees, we will begin the dating. Here we will relate the DNA sequence extracted from a living organism with a (most likely) extinct fossil group. In some cases it is possible to find a continuous fossil record with varying but related morphologies, and thus the dating is somehow straight forward. In other cases, such link is not as obvious, and an expertise is needed to determine what extinct morphology corresponds (or rather it is assumed to correspond) to the first representative in the fossil record for a given group. The older we go back in time the more difficult will be to establish such a link.  
 In this context, it is very important to do an extensive literature research on what nodes can be calibrated, have been previously used by experts in the group to calibrate equivalent nodes, and make sense to be calibrated from the rDNA phylogenetic point of view.  
