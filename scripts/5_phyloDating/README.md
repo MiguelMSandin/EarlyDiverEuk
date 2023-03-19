@@ -9,9 +9,10 @@ Given the large number of tips, applying a bayesian approach will be a computati
 [0_commonTips.sh](https://github.com/MiguelMSandin/EukEcoEvo/blob/main/scripts/5_phyloDating/0_commonTips.sh):  
 In order to build a solid control file that can be used for all trees (and therefore accounting for phylogenetic uncertainty) we will first prune all tips that do **not** appear in all trees. Using several random pruned trees we will build **carefully** the control file paying special attention to  
 - the node is monophyletic,  
-- the node is not ambiguous (i.e.; consistent among phylogenetic trees), **and**  
+- the node is not ambiguous (i.e.; consistent among phylogenetic trees),  
 - the calibration node covers at least 4 OTU sequences in all trees (an arbitrary threshold),  
-- the branch-lengths are consistent with the calibration (i.e.; if a node gathers 4 sequences with near-0 branch length, a calibration of >100 million years is doubtful; if a given node gathers 20 sequences with very long branches, a calibration of <5 million years is doubtful).  
+- the branch-lengths are consistent with the calibration (i.e.; if a node gathers 4 sequences with near-0 branch length, a calibration of >100 million years is doubtful; if a given node gathers 20 sequences with very long branches, a calibration of <5 million years is doubtful), **and**  
+- the calibration has been previously used and validated in clade-specific analyses.  
   
 [1_CheckControl.sh](https://github.com/MiguelMSandin/EukEcoEvo/blob/main/scripts/5_phyloDating/1_CheckControl.sh):  
 Here we will check that the control file is OK. We are interested in checking:  
