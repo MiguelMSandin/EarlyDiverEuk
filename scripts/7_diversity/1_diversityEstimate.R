@@ -12,20 +12,19 @@ library(vegan)
 
 #----  
 setwd("")
-rm(list=ls()[!ls() %in% c("geo", "files")])
+rm(list=ls()[!ls() %in% c("files")])
 # .rs.restartR()
 #---- 
 #---- Set names of trees, files and output ---------------------------------------------------------
 
 (files = list(
 	treeDated=grep("_median\\.tre$", dir(), value=TRUE), # The dated tree
-	treePhylo="PHYLOGENETIC_TREE", # The phylogenetic tree
-	abundances="resources/tipNames_OTUreads_norm.tsv", # The abundances table
+	treePhylo=grep("_iqtreef.*\\.tre$", dir(), value=TRUE), # The phylogenetic tree
+	abundances="../../../../resources/tipNames_OTUreads_norm.tsv", # The abundances table
 	dirClades="clades", # The output directory where all subclades of the dated tree are going to be exported
 	dirTrees="clades/phylo", # The output directory where all subclades of the phylogenetic tree are going to be exported	
 	outDir="fractions",  # The output directory where all diversity fractions are going to be exported
-	outSlopes=paste0(sub(".*\\/", "", getwd()), "_supergroups"), # A prefix for the output plots
-	outData=  paste0(sub(".*\\/", "", getwd()), "_supergroups"), # A prefix for the output data
+	out=paste0(sub(".*\\/", "", getwd()), "_supergroups"), # A prefix for the output
 	heightFactor=100, # A factor to multiply the branch-lengths of the dated tree if needed
 	minTips=300, # A minimum number of tips to consider or not a supergroup
 	maxSamplingFactor=10)) # The maximum number of rarefied samples (maxSamplingFactor x number of tips)
@@ -147,7 +146,7 @@ rm(list=ls()[!ls() %in% c("files")])
 abun = fread(files$abundances)
 
 # Rarefy the trees _________________________________________________________________________________
-pdf(paste0(files$outDir, "/", files$outSlopes, "_rarefiedPhylo.pdf"), width=11.69, height=8.27, paper='special')
+pdf(paste0(files$outDir, "/", files$out, "_rarefiedPhylo.pdf"), width=11.69, height=8.27, paper='special')
 outData = data.frame(); outSlopes = data.frame()
 for(tree in grep("^clade_.*\\.tre$", dir(files$dirTrees), value=TRUE)){
     # tree="clade_Cryptista.tre"
@@ -218,9 +217,9 @@ for(tree in grep("^clade_.*\\.tre$", dir(files$dirTrees), value=TRUE)){
     plot(slope)
 }; rm(tree, phylo, rare, rares, dists, total, abuns, div1, frac, divt, clade, k, samples, i, j, tmp, slope); dev.off()
 
-write.table(outData, paste0(files$outDir, "/", files$outData, "_rarefiedPhylo.tsv"), 
+write.table(outData, paste0(files$outDir, "/", files$out, "_rarefiedPhylo.tsv"), 
             quote=FALSE, sep="\t", row.names=FALSE, col.names=TRUE)
-write.table(outSlopes, paste0(files$outDir, "/", files$outData, "_rarefiedPhylo_raw.tsv"), 
+write.table(outSlopes, paste0(files$outDir, "/", files$out, "_rarefiedPhylo_raw.tsv"), 
             quote=FALSE, sep="\t", row.names=FALSE, col.names=TRUE)
 
 #
@@ -234,7 +233,7 @@ abundances = fread(files$abundances)
 
 trees = grep("^clade_.*\\.tre$", dir(paste0(files$dirTrees)), value=TRUE); i = 0
 dataOut = data.frame()
-pdf(paste0(files$outDir, "/", files$outSlopes, "_preston.pdf"), width=11.69, height=8.27, paper='special')
+pdf(paste0(files$outDir, "/", files$out, "_preston.pdf"), width=11.69, height=8.27, paper='special')
 for(tree in trees){
     cat("  Working on ", tree, " (", (i = i + 1), "/", length(trees), ")\n", sep="")
     
@@ -281,7 +280,7 @@ for(tree in trees){
     
 }; rm(trees, i, tree, clade, phylo, abun, model_oc, model_ll, model_oc_ext, model_ll_ext, qPois, mlLog, data, prestonPlot);dev.off()
 
-write.table(dataOut, paste0(files$outDir, "/", files$outData, "_preston.tsv"), quote=FALSE, sep="\t", row.names=FALSE, col.names=TRUE)
+write.table(dataOut, paste0(files$outDir, "/", files$out, "_preston.tsv"), quote=FALSE, sep="\t", row.names=FALSE, col.names=TRUE)
 
 #----
 #---- Check and compare the different estimates ----------------------------------------------------
@@ -289,8 +288,8 @@ write.table(dataOut, paste0(files$outDir, "/", files$outData, "_preston.tsv"), q
 rm(list=ls()[!ls() %in% c("files")])
 # .rs.restartR()
 
-tmp1 = fread(paste0(files$outDir, "/", files$outData, "_preston.tsv"))
-tmp2 = fread(paste0(files$outDir, "/", files$outData, "_rarefiedPhylo.tsv"))
+tmp1 = fread(paste0(files$outDir, "/", files$out, "_preston.tsv"))
+tmp2 = fread(paste0(files$outDir, "/", files$out, "_rarefiedPhylo.tsv"))
 
 if(all(tmp1$clade == tmp2$clade) & all(tmp1$tips == tmp2$tips)){
     data = data.frame(clade=rep(tmp1$clade, 3),
@@ -301,7 +300,7 @@ if(all(tmp1$clade == tmp2$clade) & all(tmp1$tips == tmp2$tips)){
     rm(tmp1, tmp2)
 }else{cat("\nPlease check that the clades and tips in both files are in matching order\n\n")}
 
-write.table(data, paste0(files$outDir, "/", files$outData, "_fractions.tsv"), quote=FALSE, sep="\t", row.names=FALSE, col.names=TRUE)
+write.table(data, paste0(files$outDir, "/", files$out, "_fractions.tsv"), quote=FALSE, sep="\t", row.names=FALSE, col.names=TRUE)
 
 unique(data$clade)
 data$clade = factor(data$clade, levels=c("Discoba", "Metamonada","Amoebozoa", "Nucletmycea", "Holozoa","Haptista",  "Cryptista", "Archaeplastida","Rhizaria", "Stramenopila","Alveolata"))
@@ -313,6 +312,6 @@ data$clade = factor(data$clade, levels=c("Discoba", "Metamonada","Amoebozoa", "N
     labs(title="Summary of diversity estimates",
          y="Diversity fraction estimate (percentage of total)", x="Clades"))
 
-pdf(paste0(files$outDir, "/", files$outData, "_fractions.pdf"), width=11.69, height=8.27, paper='special'); plot(summ); dev.off()
+pdf(paste0(files$outDir, "/", files$out, "_fractions.pdf"), width=11.69, height=8.27, paper='special'); plot(summ); dev.off()
 
 #----

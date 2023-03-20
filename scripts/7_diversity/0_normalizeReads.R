@@ -6,10 +6,10 @@ library(tidyr)
 library(dplyr)
 
 #----
-setwd("")
+setwd("~/Desktop/Uppsala/1_ecoEvo/repository/resources/")
 #----
 
-data = fread("tipNames_OTUreads.tsv")
+data = fread("otu_reads.tsv")
 colnames(data) = c("otus", "reads")
 
 data$db = ifelse(grepl("^PacBio_", data$otus), "PacBio", "PR2")
