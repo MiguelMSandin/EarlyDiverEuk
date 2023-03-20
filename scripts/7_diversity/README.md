@@ -20,9 +20,9 @@ Summarising, we found that our 99% OTU of the 18S rDNA trees represent in averag
 |Discoba|51.2 (±0.13) %|83.6 (±0.09) %|
 |Metamonada|50.3 (±0.27) %|81.1 (±0.36) %|
 |Amoebozoa|53.1 (±0.85) %|88.4 (±1.48) %|
-|Nucletmycea|43.4 (±0.13) %|84.1 (±0.045) %|
+|Nucletmycea|43.4 (±0.13) %|84.1 (±0.05) %|
 |Holozoa|47.0 (±0.04) %|82.6 (±0.05) %|
-|Haptista|49.8 (±0.06) %|79.6 (±0.026) %|
+|Haptista|49.8 (±0.06) %|79.6 (±0.03) %|
 |Cryptista|13.4 (±0.15) %|44.1 (±0.06) %|
 |Archaeplastida|41.5 (±0.14) %|69.9 (±0.23) %|
 |Alveolata|31.5 (±0.13) %|68.5 (±0.09) %|
