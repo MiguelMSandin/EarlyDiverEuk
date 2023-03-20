@@ -42,6 +42,7 @@ Briefly:
 - [treeCheckIntruders.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeCheckIntruders.py)
 - [treeColourBranches.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeColourBranches.py)
 - [treeCompareTips.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeCompareTips.py)
+- [treeLTTsubTrees.R](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeLTTsubTrees.R)
 - [treePruneList.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treePruneList.py)
 - [treePruneOutliers.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treePruneOutliers.py)
 - [treeRemoveBranchLengths.py](https://github.com/MiguelMSandin/random/blob/main/phylogenetics/treeRemoveBranchLengths.py)
