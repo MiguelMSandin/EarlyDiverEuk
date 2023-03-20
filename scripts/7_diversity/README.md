@@ -13,7 +13,7 @@ Here we will use different and simpler approaches to provide a maximum and minim
 [2_globalPatterns.R](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/7_diversity/2_globalPatterns.R):  
   
   
-Summarising, we found that our 99% OTU of the 18S rDNA trees represent in average a maximum of 74.8 (±11.8) % and a minimum of 40.7 (±11.4) % of the *total* diversity. Amoebozoa showed the highest maximum with an average of 88.4 (±1.48) % and Cryptista showed the lowest minimum fraction at 13.4 (±0.15) %:  
+Summarising, we found that our 99% OTU of the 18S rDNA trees represent in average a maximum of 74.8 (±11.8) % and an average minimum of 40.7 (±11.4) % of the *total* diversity. Amoebozoa showed the highest maximum with an average of 88.4 (±1.48) % and Cryptista showed the lowest minimum fraction at 13.4 (±0.15) %:  
   
 |clade|min|max|
 |---|---|---|
