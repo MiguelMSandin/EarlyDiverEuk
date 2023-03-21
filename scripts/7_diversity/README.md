@@ -19,7 +19,7 @@ Lastly, we will compare all different estimates of all supergroups across all th
   
 Summarising, we found that our 99% OTU of the 18S rDNA trees represent in average a maximum of 74.8 (±11.8) % and an average minimum of 40.7 (±11.4) % of the *total* diversity. Amoebozoa showed the highest maximum with an average of 88.4 (±1.48) % and Cryptista showed the lowest minimum fraction at 13.4 (±0.15) %:  
   
-|clade|min|max|
+|Clade|Minimum estimate|Maximum estimate|
 |---|---|---|
 |Discoba|51.2 (±0.13) %|83.6 (±0.09) %|
 |Metamonada|50.3 (±0.27) %|81.1 (±0.36) %|
