@@ -1,12 +1,10 @@
 # 8_diversificationBAMM
 
-In this step we will try to identify shifts in diversification rates from the time-calibrated trees obtained from step [5_phyloDating/](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/5_phyloDating/) and the diversity fractions estimated in step [7_diversity](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/7_diversity/) with the [BAMM](10.1371/journal.pone.0089543) and [BAMMtools](10.1111/2041-210X.12199) packages.
-
-```
-```
-
+In this step we will try to identify shifts in diversification rates from the time-calibrated trees obtained from step [5_phyloDating/](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/5_phyloDating/) and the diversity fractions estimated in step [7_diversity](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/7_diversity/) with the [BAMM](http://bamm-project.org/) and [BAMMtools](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12199) packages.
+  
+  
 [1_estimateBestShiftConfiguration.R](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/8_diversificationBAMM/1_estimateBestShiftConfiguration.R):  
-Firstly, we will run preliminary diversification analyses over 4 randomly selected trees to **estimate the most plausible number of expected shifts per supergroup** by arbitrarily setting the number of shifts to 10 and 50. To do so, we will generate the control file with the function '*generateControlFile*' and the priors estimated by the functions '*setBAMMpriors*' implemented in the [BAMMtools](10.1111/2041-210X.12199) R package. We will run the MCMC chain for 10 000 000 generations and setting the diversity fraction to the minimum and maximum estimates for every supergroup.  
+Firstly, we will run preliminary diversification analyses over 4 randomly selected trees to **estimate the most plausible number of expected shifts per supergroup** by arbitrarily setting the number of shifts to 10 and 50. To do so, we will generate the control file with the function '*generateControlFile*' and the priors estimated by the functions '*setBAMMpriors*' implemented in the BAMMtools R package. We will run the MCMC chain for 10 000 000 generations and setting the diversity fraction to the minimum and maximum estimates for every supergroup.  
   
 [2_BAMMestimateBestShifts.sh](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/8_diversificationBAMM/2_BAMMestimateBestShifts.sh):  
 Here we will run BAMM on the previously generated control files at the same time with the launcher script [2.1_BAMMestimateBestShifts_launcher.sh](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/8_diversificationBAMM/2.1_BAMMestimateBestShifts_launcher.sh). You might want to modify the headings of these scripts if you are running it in a cluster (see comments on the scripts).  
