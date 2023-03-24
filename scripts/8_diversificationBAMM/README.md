@@ -1,6 +1,6 @@
 # 8_diversificationBAMM
 
-In this step we will try to identify shifts in diversification rates from the time-calibrated trees obtained from step [5_phyloDating/](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/5_phyloDating/) and the diversity fractions estimated in step [7_diversity](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/7_diversity/) with the [BAMM](http://bamm-project.org/) and [BAMMtools](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12199) packages.
+In this step we will try to identify shifts in diversification rates using [BAMM](http://bamm-project.org/) and [BAMMtools](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12199) packages over the time-calibrated trees obtained from step [5_phyloDating/](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/5_phyloDating/) and the diversity fractions estimated in step [7_diversity](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/7_diversity/).
   
   
 [1_estimateBestShiftConfiguration.R](https://github.com/MiguelMSandin/EukEcoEvo/tree/main/scripts/8_diversificationBAMM/1_estimateBestShiftConfiguration.R):  
