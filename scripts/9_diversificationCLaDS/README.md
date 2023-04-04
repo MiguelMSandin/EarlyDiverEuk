@@ -1,4 +1,4 @@
-# 9_diversificationCLaDS//
+# 9_diversificationCLaDS/
   
 In this step we will apply the Data Augmentation method to estimate the branch specific speciation rates, the diversification Rates Through Time (RTT) and the augmented Diversity Through Time (DTT) slopes of time-calibrated phylogenetic trees implemented in the recently developed [ClaDS](https://hmorlon.github.io/PANDA.jl/dev/) package.  
   
