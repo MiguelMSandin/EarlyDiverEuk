@@ -3,8 +3,8 @@ library(rphylopic)
 
 setwd("/home/miguel/Desktop/Uppsala/1_ecoEvo/phyloPic")
 
-pics = list(Discoba_Diplonema_papillatum="e0d5529a-2984-4ed1-b22b-a284d66f442d",
-			Haptista_Coccolithus_pelagicus="2a611587-6f4d-437e-a79e-4eab8fb545d3",
+ids = list(Discoba_Diplonema_papillatum="e0d5529a-2984-4ed1-b22b-a284d66f442d",
+		   Haptista_Coccolithus_pelagicus="2a611587-6f4d-437e-a79e-4eab8fb545d3",
 			Archaeplastida_Rhodophyta_Chondrus_crispus="e9df48fe-68ea-419e-b9df-441e0b208335",
 			Archaeplastida_Embryophyta_Juniperus_virginiana="fbe23759-930e-43c6-a138-9d052d0a8bda",
 			Archaeplastida_Embryophyta_Quercus_robur="43afe2df-ab6c-47e6-a105-c0a82b8af1c5",
@@ -15,6 +15,7 @@ pics = list(Discoba_Diplonema_papillatum="e0d5529a-2984-4ed1-b22b-a284d66f442d",
 			Rhizaria_Endomyxa_Gromia_oviformis="ef6c6caf-12a4-4293-8fe8-759cb6ab930d",
 			Rhizaria_Foraminifera_Globigerinoides_ruber="57ac4823-613c-4525-a935-41fedab41ac0",
 			Rhizaria_Radiolaria_Rhizosphaera_trigonacantha="c07464fc-9719-4b16-a82b-85154f659610",
+			Rhizaria_Radiolaria_theocorythium_trachelium_dianae="e2c384c3-7c40-4128-bf13-07e442808a54",
 			Stramenopila_Sagenista_labyrinthulomycetes="7b10bc85-26ff-4a5d-b466-cc1269cacbf3",
 			Stramenopila_Gyrista_Dictyochophyceae="a9b2c5eb-562e-4460-80d4-8898b077dc04",
 			Stramenopila_Gyrista_Diatomea_Triceratium_robertsianum="4924b6bd-cfb8-4d60-a32a-442d02afbe85",
@@ -35,12 +36,14 @@ pics = list(Discoba_Diplonema_papillatum="e0d5529a-2984-4ed1-b22b-a284d66f442d",
 			Holozoa_Nematoda_Oscheius_dolichura="ac5299df-b34c-471a-8897-a7c10733b055",
 			Holozoa_Arthropoda_Crustacea_Penaeus="aed2513d-2386-4218-b913-384838c0107b")
 
-for(i in 1:length(pics)){
-	cat("\r  Downloading (", i, "/", length(pics), ") ", names(pics)[i], "                    ", sep="", end="")
-	# uuid = get_uuid(name = pics[[i]], n = 1)
-	img = get_phylopic(uuid = pics[[i]])
-	save_phylopic(img = img, path=paste0(names(pics)[i], ".svg"))
+pics = list()
+for(i in 1:length(ids)){
+	cat("\r  Downloading (", i, "/", length(ids), ") ", names(ids)[i], "                    ", sep="", end="")
+	# uuid = get_uuid(name = ids[[i]], n = 1)
+	img = get_phylopic(uuid = ids[[i]])
+	pics[i] = img
+	save_phylopic(img = img, path=paste0(names(ids)[i], ".svg"))
 }; rm(i, img); cat("\n")
 
 # plot(x = 1, y = 1, type = "n")
-# add_phylopic_base(img = img, x = 1.25, y = 1.25, ysize = 0.25)
+# add_phylopic_base(img = pics[[12]], x = 1.25, y = 1.25, ysize = 0.25)
