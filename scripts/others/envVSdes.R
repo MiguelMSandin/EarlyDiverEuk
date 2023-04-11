@@ -2,7 +2,7 @@
 library(data.table)
 library(dplyr)
 
-setwd("~/Desktop/Uppsala/1_ecoEvo/repository/resources/")
+setwd("")
 
 data = fread("tipNamesIDs.tsv", header=FALSE)
 data$V2 = NULL
@@ -111,3 +111,7 @@ data$species = NULL
 data$description[which(data$description != "environmental")] = "described"
 
 table(data$description)
+
+write.table(data, "tipNames_envVSdes.tsv", row.names=FALSE, col.names=FALSE, quote=FALSE, sep="\t")
+
+system(paste0("treeColourBranches.py -t step3r_RAng1_rep2_iqtreef_GTRg_rep2_cleaned.tre -c tipNames_envVSdes.tsv"))
