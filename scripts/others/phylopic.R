@@ -33,16 +33,18 @@ ids = list(Discoba_Diplonema_papillatum="e0d5529a-2984-4ed1-b22b-a284d66f442d",
 			Holozoa_Cnidaria_Medusozoa="839b9df7-c97f-444a-a611-95609e950960",
 			Holozoa_Craniata_Salmo_trutta="23a7d09d-4a4d-4ad5-ad07-49a6b59a7fba",
 			Holozoa_Mollusca_Myosotella_myosotis="c5835123-e2d3-4c20-9e7a-f7b6528bbf8e",
+			Holozoa_Mollusca_Doryteuthis_pealeii="fcc93095-df8d-45ca-b989-f7818a4540cc",
 			Holozoa_Nematoda_Oscheius_dolichura="ac5299df-b34c-471a-8897-a7c10733b055",
-			Holozoa_Arthropoda_Crustacea_Penaeus="aed2513d-2386-4218-b913-384838c0107b")
+			Holozoa_Arthropoda_Crustacea_Penaeus="aed2513d-2386-4218-b913-384838c0107b",
+			Holozoa_Arthropoda_Chelicerata_Stalita="41225dbf-aa79-4f3b-836e-ff2a6bd7ef77")
 
 pics = list()
 for(i in 1:length(ids)){
 	cat("\r  Downloading (", i, "/", length(ids), ") ", names(ids)[i], "                    ", sep="", end="")
 	# uuid = get_uuid(name = ids[[i]], n = 1)
 	img = get_phylopic(uuid = ids[[i]])
-	pics[i] = img
 	save_phylopic(img = img, path=paste0(names(ids)[i], ".svg"))
+	pics[i] = img
 }; rm(i, img); cat("\n")
 
 # plot(x = 1, y = 1, type = "n")
