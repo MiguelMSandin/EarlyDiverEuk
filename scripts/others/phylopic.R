@@ -1,7 +1,7 @@
  
 library(rphylopic)
 
-setwd("/home/miguel/Desktop/Uppsala/1_ecoEvo/phyloPic")
+setwd("")
 
 ids = list(Discoba_Diplonema_papillatum="e0d5529a-2984-4ed1-b22b-a284d66f442d",
 		   Haptista_Coccolithus_pelagicus="2a611587-6f4d-437e-a79e-4eab8fb545d3",
