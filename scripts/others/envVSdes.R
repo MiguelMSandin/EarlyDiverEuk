@@ -112,6 +112,10 @@ data$description[which(data$description != "environmental")] = "described"
 
 table(data$description)
 
+data$colour = fifelse(data$description=="environmental", "#648FFF", "#FFB000")
+table(data$colour)
+data$description = NULL
+
 write.table(data, "tipNames_envVSdes.tsv", row.names=FALSE, col.names=FALSE, quote=FALSE, sep="\t")
 
 system(paste0("treeColourBranches.py -t step3r_RAng1_rep2_iqtreef_GTRg_rep2_cleaned.tre -c tipNames_envVSdes.tsv"))
