@@ -118,4 +118,4 @@ data$description = NULL
 
 write.table(data, "tipNames_envVSdes.tsv", row.names=FALSE, col.names=FALSE, quote=FALSE, sep="\t")
 
-system(paste0("treeColourBranches.py -t step3r_RAng1_rep2_iqtreef_GTRg_rep2_cleaned.tre -c tipNames_envVSdes.tsv"))
+system(paste0("treeColourBranches.py -t YOUR_TREE_OF_INTEREST -c tipNames_envVSdes.tsv"))
