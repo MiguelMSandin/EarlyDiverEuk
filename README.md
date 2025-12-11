@@ -1,4 +1,4 @@
-# Eco-evolution of eukaryotes
+# Early diversification of eukaryotes
 In this repository you will find all materials, resources and scripts needed to replicate the study:  
 Sandin MM, Cohen P, Morlon H, Burki F (**2025**) Environmental phylogenetics supports a steady diversification of crown eukaryotes starting from the mid Proterozoic. ***INSERT_LINK_HERE***
 
