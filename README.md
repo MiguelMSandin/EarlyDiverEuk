@@ -1,6 +1,6 @@
 # Early diversification of eukaryotes
 In this repository you will find all materials, resources and scripts needed to replicate the study:  
-Sandin MM, Cohen P, Morlon H, Burki F (**2025**) Environmental phylogenetics supports a steady diversification of crown eukaryotes starting from the mid Proterozoic. ***INSERT_LINK_HERE***  
+Sandin MM, Cohen P, Morlon H, Burki F (**2025**) Environmental phylogenetics supports a steady diversification of crown eukaryotes starting from the mid Proterozoic. *bioRxiv* 2025.12.12.693929; doi: [10.64898/2025.12.12.693929](https://doi.org/10.64898/2025.12.12.693929)  
 This repository is complementary to the Zenodo repository [10.5281/zenodo.17901847](https://doi.org/10.5281/zenodo.17901847), containing all raw files and generated trees.  
 
 ## Structure of the repository
