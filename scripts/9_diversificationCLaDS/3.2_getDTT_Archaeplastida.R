@@ -149,6 +149,8 @@ summ = dtt %>% group_by(clade, root, diversity, time_point) %>%
 # Open LTTs
 tmp = fread(files$ltts)
 tmp = subset(tmp, replicates > max(tmp$replicates)*0.5)
+tmp$N = tmp$N + 1
+tmp$logN = log(tmp$N)
 tmp$n05 = tmp$N
 tmp$n95 = tmp$N
 tmp$diversity = "LTT"
@@ -186,6 +188,19 @@ summ$colour = factor(summ$colour,
 summ$root = factor(summ$root, levels=c("rootD", "rootA"))
 summ$diversity = factor(summ$diversity, levels=c("LTT", "max", "min"))
 
+summ$diversity2 = ifelse(summ$diversity == "LTT", "LTT", "DTT")
+unique(summ$diversity2)
+summ$diversity2 = factor(summ$diversity2, levels=c("LTT", "DTT"))
+
+summ$grouping = paste0(summ$clade, "-", summ$diversity)
+unique(summ$grouping)
+summ$grouping = factor(summ$grouping, levels=c("Main_tree-LTT",
+                                               "Archaeplastida-LTT", "Rhodophyta-LTT", "Chloroplastida-LTT", 
+                                               "Discoba-LTT", "Rhizaria-LTT", "Alveolata-LTT", "Amoebozoa-LTT", "Nucletmycea-LTT", "Holozoa-LTT",
+                                               "Archaeplastida-min", "Archaeplastida-max", "Rhodophyta-min", "Rhodophyta-max", "Chloroplastida-min", "Chloroplastida-max",
+                                               "Discoba-min", "Discoba-max", "Rhizaria-min", "Rhizaria-max", "Alveolata-min", "Alveolata-max", 
+                                               "Amoebozoa-min", "Amoebozoa-max", "Nucletmycea-min", "Nucletmycea-max", "Holozoa-min", "Holozoa-max"))
+
 #
 #----
 #---- plotting -------------------------------------------------------------------------------------
@@ -197,21 +212,22 @@ geos = subset(geo, time > min(summ$t05, na.rm=TRUE))
 (lttplot = ggplot(summ)+
 		geom_vline(xintercept = geos$time, color="lightgrey") +
     # geom_ribbon(aes(ymin=n05, ymax=n95, x=time, xmin=t05, xmax=t95, y=n, fill=clade), alpha=0.2, colour = NA) +
-    geom_ribbon(aes(ymin=n05, ymax=n95, x=time, fill=clade), alpha=0.2, colour = NA) +
-    geom_ribbon(aes(xmin=t05, xmax=t95, y=n, fill=clade), alpha=0.2, colour = NA) +
-		geom_line(aes(x=time, y=n, color=clade)) +
+    # geom_ribbon(aes(ymin=n05, ymax=n95, x=time, fill=clade, group=grouping), alpha=0.2, colour = NA) +
+    geom_ribbon(aes(xmin=t05, xmax=t95, y=n, fill=clade, group=grouping), alpha=0.1, colour = NA) +
+		geom_line(aes(x=time, y=n, color=clade, group=grouping, alpha=grouping)) +
 		# geom_text(data=geos, aes(x=mid, y=max(summ$n)+5, label=period), size=2)+
 		scale_x_continuous(breaks=seq((round(min(summ$t05, na.rm=TRUE), -2)), 0, 100),
 						   minor_breaks=seq((round(min(summ$t05, na.rm=TRUE), -2)), 0, 50)) +
 		scale_y_log10() + annotation_logticks(sides = 'l')+
-    facet_grid(diversity ~ root, scales="free")+
+    facet_grid(diversity2 ~ root, scales="free")+
 		scale_color_manual(values=as.character(sort(unique(summ$colour))))+
 		scale_fill_manual(values=as.character(sort(unique(summ$colour))))+
+    scale_alpha_manual(values=c(1, 1, 1, 1,  1, 1, 1, 1, 1, 1, 1, 0.6, 1, 0.6, 1, 0.6, 1, 0.6, 1, 0.6, 1, 0.6, 1, 0.6, 1, 0.6, 1, 0.6))+
 		theme_classic()+
 		labs(y="Ln (N)", x="Time (Ma)")+
     theme(legend.position = "none"))
 
-pdf(paste0(files$out, ".pdf"), width=8.27, height=11.69, paper='special'); plot(lttplot); dev.off()
+pdf(paste0(files$out, ".pdf"), width=11.69, height=11.69, paper='special'); plot(lttplot); dev.off()
 
 
 
